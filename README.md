@@ -34,48 +34,6 @@ Output:
 or “⚠️ Possible Dyslexia Detected” with highlighted problem areas.
 
 
-
-
-
-
-⚙️ System Architecture
-        +---------------------------+
-        |  Input Handwritten Image  |
-        +-------------+-------------+
-                      |
-                      v
-         +--------------------------+
-         |   OCR (Tesseract Engine) |
-         +-------------+------------+
-                       |
-                       v
-        +-----------------------------+
-        |   Preprocessing & Cropping  |
-        +-------------+---------------+
-                      |
-                      v
-         +----------------------------+
-         |   CNN (safe_glyphnet_best) |
-         |   Predicts: Normal/Reversal|
-         +-------------+--------------+
-                       |
-                       v
-        +----------------------------+
-        |   Dyslexia Decision Logic  |
-        |  (counts reversals, scores)|
-        +-------------+--------------+
-                      |
-                      v
-       +-----------------------------------+
-       | Flask Web Interface (app.py)      |
-       | Result, Annotated Image, Summary  |
-       +-----------------------------------+
-
-
-
-
-
-
 🧩 Methodology
 Dataset Preparation
 Dataset structure:
