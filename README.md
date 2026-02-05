@@ -27,6 +27,18 @@ PyTesseract OCR for extracting text
 Automated bounding-box annotation for reversed or uncertain characters
 
 
+## Model Performance
+
+- Validation Accuracy: ~96–97%
+- Test Samples: 56,723 handwritten characters
+
+### Confusion Matrix
+[https://github.com/Maddy152006/dyslexia-detection-ai/blob/main/Screenshot%202026-02-05%20191713.png]
+
+### Loss v/s Accuracy Graph
+[https://github.com/Maddy152006/dyslexia-detection-ai/blob/main/Screenshot%202026-02-05%20191639.png]
+
+The CNN model demonstrates strong classification across Normal, Reversal, and Corrected handwriting patterns, confirming robustness for dyslexia screening.
 
 
 Output:
